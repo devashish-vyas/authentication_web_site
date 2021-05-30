@@ -9,5 +9,5 @@ class Post(models.Model):
     date_posted=models.DateTimeField(default=timezone.now)
     author=models.ForeignKey(User,on_delete=models.CASCADE)
 
-    def __str__(self):
+    def __str__(self): #what we wanna see when we print it out
         return self.title
